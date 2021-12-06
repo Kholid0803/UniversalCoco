@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+// Navbar
+.navbar {
+    img {
+        width: 100px;
+    }
+
+    .custom-toggler {
+        border-color: rgb(255, 255, 255);
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+    }
+
+    .nav-link {
+        color: #fff !important;
+        margin-right: 20px;
+        font-weight: 600;
+    }
+
+}
+
+// Jumbotron
+.jumbotron {
+    // Background
+    background-image: url(../img/bg.webp);
+    background-size: cover;
+    height: 102.5vh;
+    margin-top: -75px;
+    color: #fff;
+
+    .row {
+        margin-top: 130px;
+
+        .display-4 {
+            font-size: 3rem;
+            font-weight: 900;
+        }
+    }
+}
+
+// About
+.about {
+    margin-top: 100px;
+
+    h5 {
+        margin-top: 50px;
+    }
+
+    p {
+        margin-top: 60px;
+    }
+
+    img {
+        width: 400px;
+        margin-left: 100px;
+    }
+}
+
+// Key Feature
+.key-feature {
+    text-align: center;
+    margin-top: 150px;
+
+    .container {
+        .row {
+            margin-top: 50px;
+
+            img {
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+
+            h5 {
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// ProgressBar
+.prog-bar {
+
+    margin-top: 150px;
+
+    .progress {
+        width: 150px;
+        height: 150px;
+        background: none;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 6px solid #eee;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &>span {
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        .progress-left {
+            left: 0;
+
+            .progress-bar {
+                left: 100%;
+                border-top-right-radius: 80px;
+                border-bottom-right-radius: 80px;
+                border-left: 0;
+                -webkit-transform-origin: center left;
+                transform-origin: center left;
+            }
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 100%;
+            background: none;
+            border-width: 6px;
+            border-style: solid;
+            position: absolute;
+            top: 0;
+        }
+
+        .progress-right {
+            right: 0;
+
+            .progress-bar {
+                left: -100%;
+                border-top-left-radius: 80px;
+                border-bottom-left-radius: 80px;
+                border-right: 0;
+                -webkit-transform-origin: center right;
+                transform-origin: center right;
+            }
+        }
+
+        .progress-value {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+// Product
+.product {
+    background-color: #F6F7F6;
+    margin-top: 150px;
+    padding-top: 80px;
+    width: auto;
+    height: 160vh !important;
+    text-align: center;
+
+    h2 {
+        font-weight: bold;
+    }
+
+    .row {
+        margin-top: 80px;
+
+        .carousel-inner {
+            .carousel-item {
+                .card {
+                    border-radius: 15px;
+                    padding: 20px;
+                    text-align: center;
+
+                    img {
+                        width: 300px;
+                        border-radius: 15px;
+                    }
+
+                    h5 {
+                        margin-top: 30px;
+                        margin-bottom: 20px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        margin-bottom: 30px;
+                    }
+
+                    .custom-btn {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        filter: invert(100%);
+    }
+
+    .wa {
+
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+
+// Teams
+.teams {
+    display: none;
+    margin-top: 150px;
+
+    .container {
+        h2 {
+            margin-bottom: 80px;
+        }
+
+        .row {
+            .text-success {
+                margin-top: 50px;
+                font-size: 1.2rem;
+            }
+
+            .status {
+                margin-top: -10px;
+                font-weight: bold;
+            }
+
+            a {
+                margin: 5px 5px;
+            }
+        }
+    }
+}
+
+// FAQ
+.faq {
+    margin-top: 150px;
+
+    h4,
+    h5,
+    h6 {
+        font-weight: bold;
+    }
+
+    .first-head {
+        margin-bottom: 30px;
+    }
+
+    .second-head {
+        margin-bottom: 80px;
+    }
+
+    .first-text {
+        margin-bottom: 30px;
+    }
+
+    .faq-section {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid black;
+    }
+}
+
+// Company
+.company {
+    background-color: #373737;
+    padding-top: 60px;
+    margin-top: 150px;
+    margin-bottom: -20px;
+
+    h1 {
+        font-weight: bold;
+    }
+
+    h1,
+    h5 {
+        color: #fff;
+        text-align: center;
+    }
+
+    .row {
+        color: #fff;
+
+        img {
+            width: 150px;
+            margin-top: 50px;
+        }
+
+        h4 {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        .fab {
+            color: #fff;
+            margin: 8px 8px;
+        }
+    }
+
+    .footer {
+        background-color: #282828;
+        text-align: center;
+        height: 55px;
+        padding-top: 15px;
+        margin-top: 40px;
+    }
+}
+
+
+// Button
+.custom-btn {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 50px;
+    align-items: center;
+}
+
+// Responsive
+
+@media screen and (max-width: 992px) {
+
+    // Navbar
+    .navbar {
+        position: relative;
+        z-index: 2;
+
+        .nav-link {
+            margin: 0 auto;
+        }
+    }
+
+    // Jumbotron
+    .jumbotron {
+        margin-top: -400px;
+        height: 150vh;
+        text-align: center;
+
+        .row {
+
+            h3 {
+                margin-top: 400px;
+                font-size: 1.6rem;
+            }
+
+            .display-4 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    // About
+    .about {
+
+        h5 {
+            margin-top: 30px;
+        }
+
+        p {
+            margin-top: 40px;
+        }
+
+        img {
+            width: 300px;
+            margin-left: 20px;
+        }
+    }
+
+    // Product
+    .product {
+        height: 120vh !important;
+        text-align: center;
+
+        .carousel-inner {
+            .carousel-item {
+                .card {
+
+                    img {
+                        width: 150px !important;
+                    }
+
+                    p {
+                        font-size: .9rem;
+                    }
+
+                    .custom-btn {
+                        font-size: 1rem;
+                        padding: 10px 10px;
+                    }
+                }
+
+            }
+        }
+
+        .wa {
+            margin-left: unset;
+        }
+    }
+
+    // Teams
+    .teams {
+        .container {
+            h2 {
+                margin-bottom: 50px;
+            }
+        }
+
+        .col-md-4 {
+            margin-top: 80px;
+
+            img {
+                width: 150px;
+            }
+        }
+    }
+
+    // FAQ
+    .faq {
+        .second-head {
+            margin-bottom: 50px;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+        }
+
+        .accordion {
+
+            text-align: center;
+
+            h5 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    // Footer
+    .company {
+        text-align: center;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h5 {
+            font-size: 1rem;
+        }
+
+        .row {
+            img {
+                width: 120px;
+                margin-top: 30px;
+            }
+
+            h4 {
+                font-size: 1.2rem;
+                margin-top: 40px;
+            }
+
+            p {
+                font-size: .9rem;
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .product {
+        .carousel-inner {
+            .carousel-item {
+                margin-left: -70px;
+
+                .card {
+                    width: 700px;
+                    height: 650px;
+                }
+
+            }
+        }
+    }
+}
